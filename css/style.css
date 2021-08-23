@@ -178,7 +178,6 @@
 
  .about__img {
    float: left;
-   margin-left: -100px;
  }
 
  .content__title {
@@ -265,7 +264,7 @@
  }
 
  .manage__img {
-   margin-left: 49px;
+   float: right;
  }
 
  .manage__elements {
@@ -302,11 +301,7 @@
  .motivation-img {
    width: 590px;
    height: 570px;
-   margin-left: -100px;
- }
-
- .motivation__content {
-   margin-left: 61px;
+   float: left;
  }
 
  .motivation__title {
@@ -317,7 +312,6 @@
  .motivation__text {
    font-size: 20px;
    line-height: 32px;
-   width: 686px;
    margin-bottom: 45px;
  }
 
@@ -365,7 +359,7 @@
  .signup__content {
    text-align: center;
    width: 675px;
-   margin-left: 399px;
+   margin: auto;
  }
 
  .signup__title {
@@ -378,7 +372,6 @@
  .signup__text {
    font-size: 20px;
    line-height: 28px;
-   width: 565px;
    margin: auto;
  }
 
@@ -393,7 +386,6 @@
  }
 
  .signup__form-title {
-   width: 633px;
    font-size: 48px;
    line-height: 64px;
    margin: auto;
@@ -454,11 +446,205 @@
  .footer__social {
    display: flex;
    justify-content: flex-end;
-   margin-right: 250px;
+   margin-right: 90px;
  }
 
- .footer__social-img {
-   margin-left: 16px;
+ img.footer__social-img:nth-child(-n+2) {
+   margin-right: 16px;
+ }
+
+ a.navbar-brand .footer__social-img {
    position: relative;
    bottom: 18px;
+ }
+
+ @media (max-width: 1440px) {
+
+   .top__img,
+   .manage__img,
+   .motivation-img {
+     width: 80%;
+     height: auto;
+   }
+ }
+
+ @media (max-width: 1226px) {
+   a.navbar-brand {
+     margin-left: 0;
+   }
+
+   a.nav-link.btn.header-btn {
+     display: none;
+   }
+
+   ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+     margin-left: auto;
+   }
+
+   .top__btn {
+     margin-bottom: 10px;
+     margin-left: 0;
+   }
+
+   .promo__img,
+   .signup-img {
+     width: 15%;
+   }
+
+   .promo__content {
+     margin-left: 0;
+     width: auto;
+   }
+
+   ul.navbar-nav.me-auto.mb-2.mb-lg-0.footer__navbar {
+     margin-left: 0;
+   }
+
+   .footer__inner {
+     padding-left: 50px;
+   }
+ }
+
+ @media (max-width: 992px) {
+   .navbar-light .navbar-nav .nav-link {
+     text-align: center;
+   }
+
+   .top__img,
+   .about__img,
+   .manage__img,
+   .motivation-img,
+   .promo__img,
+   .signup-img {
+     display: none;
+   }
+
+   .row-margin {
+     flex-direction: column;
+     align-items: center;
+   }
+
+   .top__title {
+     margin-top: 44px;
+     text-align: center;
+     margin-bottom: 25px;
+   }
+
+   .top__text {
+     text-align: center;
+   }
+
+   .top__name {
+     margin-left: 0;
+     text-align: center;
+   }
+
+   .top__join {
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 35px;
+   }
+
+   .space {
+     margin-left: 0;
+   }
+
+   .top__join::after {
+     padding-left: 0;
+   }
+
+   .top__btn-wrapper {
+     text-align: center;
+   }
+
+   .top__btn {
+     margin-right: 0;
+   }
+
+   .about__content {
+     text-align: center;
+   }
+
+   .content__title,
+   .content__text {
+     text-align: center;
+   }
+
+   .about__items {
+     flex-direction: column;
+   }
+
+   .about__item {
+     margin-bottom: 40px;
+   }
+
+   .manage__content {
+     margin-left: 0;
+   }
+
+   .manage__content {
+     text-align: center;
+     margin-bottom: 40px;
+   }
+
+   .manage__title {
+     text-align: center;
+   }
+
+   .manage__text {
+     width: auto;
+     text-align: center;
+   }
+
+   .motivation__content {
+     text-align: center;
+   }
+
+   .motivation__btn {
+     margin-bottom: 40px;
+   }
+
+   p.signup__text {
+     max-width: 342px;
+   }
+
+   .footer__inner {
+     padding-left: 0;
+     text-align: center;
+   }
+
+   .footer__text {
+     max-width: 562px;
+     text-align: center;
+     margin: auto;
+   }
+
+   ul.navbar-nav.me-auto.mb-2.mb-lg-0.footer__navbar {
+     flex-direction: column;
+     margin: auto;
+   }
+
+   .footer__social {
+     justify-content: center;
+     margin-right: 0;
+   }
+ }
+
+ @media (max-width: 574px) {
+   a.navbar-brand {
+     margin-left: 30px;
+   }
+
+   button.navbar-toggler {
+     margin-right: 30px;
+   }
+
+   .row.row-margin {
+     margin-left: -37px;
+   }
+
+   h2.promo__title {
+     padding-left: 28px;
+   }
  }
