@@ -23,7 +23,7 @@
       <div class="container wrapper">
 
         <a class="navbar-brand" href="#"><img src="img/logo.svg" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="header_change">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -102,11 +102,11 @@
               <div class="col-6 col-padding">
                 <img class="about__img" src="img/about-img.svg" alt="">
               </div>
-              <div class="col-6 col-padding">
+              <div class="col-6 col-padding wrapp">
                 <h3 class="content__title">Easy Collaboration!</h3>
                 <p class="content__text">Be the smooth talker with our easy to use communication channel that makes collaboration better than ever before!</p>
                 <p class="content__text">Communicate on Bottle, so you never have to bottle up any of your crazy ideas!</p>
-                <a href="" class="about__btn btn">Tell me more!</a>
+                <a href="#" class="about__btn btn">Tell me more!</a>
               </div>
             </div>
           </div>
@@ -158,8 +158,8 @@
           <img class="manage__img" src="img/manage-image.png" alt="">
         </div>
       </div>
-      <div class="row row-margin manage__elements">
-        <div class="col-3 col-padding manage__items">
+      <div class="manage__items">
+        <div class="manage__item">
           <img class="manage__item-img" src="./img/manage-images/manage-element-1.svg" alt="">
           <div class="manage__item-content">
             <h3 class="manage__item-title">Day Planner</h3>
@@ -167,7 +167,7 @@
           </div>
         </div>
 
-        <div class="col-3 col-padding manage__items">
+        <div class="manage__item">
           <img class="manage__item-img" src="./img/manage-images/manage-element-2.svg" alt="">
           <div class="manage__item-content">
             <h3 class="manage__item-title">Lists & Boards</h3>
@@ -175,7 +175,7 @@
           </div>
 
         </div>
-        <div class="col-3 col-padding manage__items">
+        <div class="manage__item">
           <img class="manage__item-img" src="./img/manage-images/manage-element-3.svg" alt="">
           <div class="manage__item-content">
             <h3 class="manage__item-title">Workload</h3>
@@ -193,15 +193,15 @@
         <div class="col-6 col-padding">
           <img class="motivation-img" src="./img/motivation-image.svg" alt="">
         </div>
-        <div class="col-6 col-padding motivation__content">
+        <div class="col-6 col-padding motivation__content wrapp">
           <h2 class="motivation__title">Elements of Motivation</h2>
           <p class="motivation__text">What makes us unique is our elements of motivational psychology used to slightly nudge you towards performing better every day. A happy team is a productive team, right? We believe so too!</p>
           <a href="" class="motivation__btn btn">Tell me more!</a>
         </div>
       </div>
 
-      <div class="row row-margin motivation__elements">
-        <div class="col-3 col-padding motivation__item">
+      <div class="motivation__items">
+        <div class="motivation__item">
           <img class="motivation__item-img" src="./img/motivation-images/motivation-img-1.svg" alt="">
           <div class="motivation__item-content">
             <h3 class="motivation__item-title">Performance</h3>
@@ -209,7 +209,7 @@
           </div>
         </div>
 
-        <div class="col-3 col-padding motivation__item">
+        <div class="motivation__item">
           <img class="motivation__item-img" src="./img/motivation-images/motivation-img-2.svg" alt="">
           <div class="motivation__item-content">
             <h3 class="motivation__item-title">Appreciation</h3>
@@ -217,7 +217,7 @@
           </div>
         </div>
 
-        <div class="col-3 col-padding motivation__item">
+        <div class="motivation__item">
           <img class="motivation__item-img" src="./img/motivation-images/motivation-img-3.svg" alt="">
           <div class="motivation__item-content">
             <h3 class="motivation__item-title">Feedback</h3>
@@ -259,7 +259,7 @@
           <div class="footer__inner">
             <img class="footer-img" src="./img/footer-logo.svg" alt="">
             <p class="footer__text">
-              Bottle is a team management solutions software that helps teams collaborate and manage tasks along with various motivational elements.
+              Bottle is a team management solutions software that helps teams<br> collaborate and manage tasks along with various motivational elements.
             </p>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 footer__navbar">
               <li class="nav-item footer__item">
@@ -292,6 +292,8 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="js/main.js" charset="utf-8"></script>
 </body>
+
 
 </html>
